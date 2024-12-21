@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+</head>
+<body>
+    <h1>Form Pendaftaran Mahasiswa Baru</h1>
+    <form>
+        <table>
+            <tr>
+                <td>Nama Lengkap :</td>
+                <td><input type="text" name="nama_lengkap"></td>
+            </tr>
+            <tr>
+                <td>Tempat Lahir :</td>
+                <td><input type="text" name="tempat_lahir"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir :</td>
+                <td><input type="date" name="tanggal_lahir" placeholder="hh / bb / tttt"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin :</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+                    <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Agama :</td>
+                <td>
+                    <select name="agama">
+                        <option>Islam</option>
+                        <option>Katolik</option>
+                        <option>Kristen</option>
+                        <option>Hindu</option>
+                        <option>Budha</option>
+                        <option>Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat Lengkap :</td>
+                <td><textarea name="alamat_lengkap"></textarea></td>
+            </tr>
+            <tr>
+                <td>Nomor Telp/HP :</td>
+                <td><input type="text" name="nomor_telp"></td>
+            </tr>
+            <tr>
+                <td>Hobi/Minat :</td>
+                <td>
+                    <input type="checkbox" name="hobi" value="Membaca"> Membaca
+                    <input type="checkbox" name="hobi" value="Menulis"> Main Game
+                    <input type="checkbox" name="hobi" value="Menonton"> Menonton
+                    <input type="checkbox" name="hobi" value="Olahraga"> Olahraga
+                </td>
+            </tr>
+            <tr>
+                <td>Jumlah Saudara :</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Pas Foto :</td>
+                <td><input type="file" name="pas_foto"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Kirim">
+                    <input type="reset" value="Batal">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

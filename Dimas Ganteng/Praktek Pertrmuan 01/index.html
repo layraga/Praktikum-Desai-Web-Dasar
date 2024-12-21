@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran Futsal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg mt-10">
+        <h1 class="text-2xl font-bold mb-6 text-center">Pembayaran Futsal</h1>
+        
+        <form id="paymentForm">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Nama Pemesan</label>
+                <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            
+            <div class="mb-4">
+                <label for="phone" class="block text-sm font-medium text-gray-700">Nomor Telepon</label>
+                <input type="tel" id="phone" name="phone" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            
+            <div class="mb-4">
+                <label for="date" class="block text-sm font-medium text-gray-700">Tanggal Pemesanan</label>
+                <input type="date" id="date" name="date" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            
+            <div class="mb-4">
+                <label for="time" class="block text-sm font-medium text-gray-700">Waktu Pemesanan</label>
+                <input type="time" id="time" name="time" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            
+            <div class="mb-4">
+                <label for="duration" class="block text-sm font-medium text-gray-700">Durasi (jam)</label>
+                <input type="number" id="duration" name="duration" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            
+            <div class="mb-4">
+                <label for="paymentMethod" class="block text-sm font-medium text-gray-700">Metode Pembayaran</label>
+                <select id="paymentMethod" name="paymentMethod" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+                    <option value="creditCard">Kartu Kredit</option>
+                    <option value="bankTransfer">Transfer Bank</option>
+                    <option value="eWallet">E-Wallet</option>
+                </select>
+            </div>
+            
+            <div class="mb-4">
+                <label for="amount" class="block text-sm font-medium text-gray-700">Jumlah Pembayaran (Rp)</label>
+                <input type="number" id="amount" name="amount" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            
+            <div class="flex justify-center">
+                <button type="submit" class="px-4 py-2 bg-indigo-600 text-white rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Bayar Sekarang</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('paymentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Pembayaran berhasil!');
+        });
+    </script>
+</body>
+</html>

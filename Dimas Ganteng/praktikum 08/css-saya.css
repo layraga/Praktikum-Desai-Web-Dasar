@@ -1,0 +1,26 @@
+body {
+    margin: 20px auto;
+    width: 950px;
+    }
+    header, nav, section, footer {
+    display:block;
+    border:1px solid blue;
+    }
+    header{
+    height:80px;
+    }
+    nav{
+    float:left;
+    width:200px;
+    height:500px;
+    }
+    section{
+    margin-left:200px;
+    width:500;
+    height:500px;
+    }
+    footer{
+    clear:both;
+    height:40px;
+    }
+    
